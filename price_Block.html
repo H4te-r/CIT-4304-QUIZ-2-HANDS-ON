@@ -1,48 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-    </head>
-    <body class="">
-        <header class="bg-[#000000] opacity-90 text-white w-full p-4 border-b-2 border-[#00ffff] backdrop-blur-sm">
-            <nav class="flex max-w-7xl mx-auto">
-                <div class="font-bold text-xl my-auto">
-                    <a href="index.html" class="hover:text-[#00ffff] transition duration-300">JESSON ESCAPES</a>
-                </div>
-                <div class="ml-auto my-auto">
-                    <ul class="flex space-x-4">
-                        <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)] transition duration-500 p-2 transform hover:scale-105">
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)] transition duration-500 p-2 transform hover:scale-105">
-                            <a href="header_login.html">Login</a>
-                        </li>
-                        <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)] transition duration-500 p-2 transform hover:scale-105">
-                            <a href="content.html">Content</a>
-                        </li>
-                        <li class="rounded bg-[#000000] text-white font-bold border-b-2 border-[#00ffff] hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)] transition duration-500 p-2 transform hover:scale-105">
-                            <a href="price_block.html">Prices</a>
-                        </li>
-                        <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)] transition duration-500 p-2 transform hover:scale-105">
-                            <a href="download.html">Download Now</a>
-                        </li>
-                        <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)] transition duration-500 p-2 transform hover:scale-105">
-                            <a href="contact_inquiry.html">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Packages - Jesson Escapes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#f6f9f7] text-[#2B3E34] min-h-screen flex flex-col">
+    <header class="bg-[#000000] opacity-90 text-white w-full p-4 border-b-2 border-[#00ffff] backdrop-blur-sm">
+        <nav class="flex max-w-7xl mx-auto">
+            <div class="font-bold text-xl my-auto">
+                <a href="index.html" class="hover:text-[#00ffff] transition duration-300">JESSON ESCAPES</a>
+            </div>
+            <div class="ml-auto my-auto">
+                <ul class="flex space-x-4">
+                    <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)] transform hover:scale-105">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)] transform hover:scale-105">
+                        <a href="header_login.html">Login</a>
+                    </li>
+                    <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)] transform hover:scale-105">
+                        <a href="content.html">Content</a>
+                    </li>
+                    <li class="rounded bg-[#000000] text-white font-bold border-b-2 border-[#00ffff] hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)] transition duration-500 p-2 transform hover:scale-105">
+                        <a href="price_block.html">Prices</a>
+                    </li>
+                    <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)] transform hover:scale-105">
+                        <a href="download.html">Download Now</a>
+                    </li>
+                    <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)] transform hover:scale-105">
+                        <a href="contact_inquiry.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-        <footer class="bg-[#000000] border-t-2 border-[#00ffff] opacity-90 w-full p-8 text-[#aaaaaa] relative">
-            <div class="max-w-7xl mx-auto text-center">
-                <div class="shadow-2xl">
-                    <p class="text-sm rounded-lg">&copy; 2025 Your Company. All rights reserved.</p>
+    <main class="flex-grow">
+        <section class="max-w-7xl mx-auto px-8 py-16">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-bold mb-2">Travel Packages</h1>
+                <p class="text-lg text-[#546A50] mb-4">Choose the perfect adventure for your next escape</p>
+                <div class="inline-flex bg-white rounded-full shadow p-1">
+                    <button class="px-6 py-2 rounded-full font-semibold text-[#2B3E34] bg-[#00ffff] shadow hover:opacity-90 transition">Monthly</button>
+                    <button class="px-6 py-2 rounded-full font-semibold text-[#2B3E34] hover:bg-[#00ffff] transition">Yearly</button>
                 </div>
             </div>
-        </footer>
-    </body>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl shadow-xl border border-[#7E8A6D] p-8 flex flex-col">
+                    <h2 class="text-xl font-bold mb-2 text-[#2B3E34]">Budget Explorer</h2>
+                    <div class="text-4xl font-extrabold mb-1">₱1,000<span class="text-lg font-normal">/month</span></div>
+                    <p class="mb-4 text-[#546A50]">Perfect for solo travelers or backpackers</p>
+                    <a href="#" class="bg-[#00ffff] text-black font-semibold rounded-lg py-2 mb-6 shadow hover:opacity-90 transition text-center">Get Started Now</a>
+                    <h3 class="font-semibold mb-2">Includes:</h3>
+                    <ul class="space-y-2 text-sm text-[#2B3E34]">
+                        <li>✔️ Hotel accommodation</li>
+                        <li>✔️ 2 guided tours</li>
+                        <li>✔️ Free city map</li>
+                        <li>✔️ Email support</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-2xl shadow-xl border-2 border-[#00ffff] p-8 flex flex-col scale-105">
+                    <h2 class="text-xl font-bold mb-2 text-[#2B3E34]">Adventure Seeker</h2>
+                    <div class="text-4xl font-extrabold mb-1">₱4,999<span class="text-lg font-normal">/month</span></div>
+                    <p class="mb-4 text-[#546A50]">Great for couples or friends looking for more</p>
+                    <a href="#" class="bg-[#00ffff] text-black font-semibold rounded-lg py-2 mb-6 shadow hover:opacity-90 transition text-center">Get Started Now</a>
+                    <h3 class="font-semibold mb-2">Includes:</h3>
+                    <ul class="space-y-2 text-sm text-[#2B3E34]">
+                        <li>✔️ 3-star hotel stay</li>
+                        <li>✔️ 5 guided tours</li>
+                        <li>✔️ Island hopping</li>
+                        <li>✔️ Airport transfers</li>
+                        <li>✔️ Priority chat support</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-2xl shadow-xl border border-[#7E8A6D] p-8 flex flex-col">
+                    <h2 class="text-xl font-bold mb-2 text-[#2B3E34]">Luxury Voyager</h2>
+                    <div class="text-4xl font-extrabold mb-1">₱14,999<span class="text-lg font-normal">/month</span></div>
+                    <p class="mb-4 text-[#546A50]">For families or groups seeking premium experiences</p>
+                    <a href="#" class="bg-[#00ffff] text-black font-semibold rounded-lg py-2 mb-6 shadow hover:opacity-90 transition text-center">Get Started Now</a>
+                    <h3 class="font-semibold mb-2">Includes:</h3>
+                    <ul class="space-y-2 text-sm text-[#2B3E34]">
+                        <li>✔️ 5-star resort stay</li>
+                        <li>✔️ Unlimited guided tours</li>
+                        <li>✔️ Private transport</li>
+                        <li>✔️ Custom itinerary</li>
+                        <li>✔️ 24/7 concierge support</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#000000] border-t-2 border-[#00ffff] opacity-90 w-full p-8 text-[#aaaaaa]">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-sm">&copy; 2025 Jesson Escapes. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
 </html>
