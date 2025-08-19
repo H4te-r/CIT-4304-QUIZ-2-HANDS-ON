@@ -8,11 +8,13 @@
 </head>
 <body class="bg-[#f6f9f7] text-[#2B3E34] min-h-screen flex flex-col">
     <header class="bg-[#000000] opacity-90 text-white w-full p-4 border-b-2 border-[#00ffff] backdrop-blur-sm">
-        <nav class="flex max-w-7xl mx-auto">
-            <div class="font-bold text-xl my-auto">
+        <nav class="flex items-center justify-between max-w-7xl mx-auto">
+            <div class="font-bold text-xl">
                 <a href="index.html" class="hover:text-[#00ffff] transition duration-300">JESSON ESCAPES</a>
             </div>
-            <div class="ml-auto my-auto">
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex">
                 <ul class="flex space-x-4">
                     <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)] transform hover:scale-105">
                         <a href="index.html">Home</a>
@@ -34,25 +36,56 @@
                     </li>
                 </ul>
             </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-white hover:text-[#00ffff] transition duration-300" id="mobile-menu-btn">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
         </nav>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="md:hidden mt-4 hidden" id="mobile-menu">
+            <ul class="flex flex-col space-y-2 px-4">
+                <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)]">
+                    <a href="index.html" class="block">Home</a>
+                </li>
+                <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)]">
+                    <a href="header_login.html" class="block">Login</a>
+                </li>
+                <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)]">
+                    <a href="content.html" class="block">Content</a>
+                </li>
+                <li class="rounded bg-[#000000] text-white font-bold border-b-2 border-[#00ffff] hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)] transition duration-500 p-2">
+                    <a href="price_Block.html" class="block">Prices</a>
+                </li>
+                <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)]">
+                    <a href="download.html" class="block">Download Now</a>
+                </li>
+                <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)]">
+                    <a href="contact_inquiry.html" class="block">Contact Us</a>
+                </li>
+            </ul>
+        </div>
     </header>
 
     <main class="flex-grow">
-        <section class="max-w-7xl mx-auto px-8 py-16">
-            <div class="text-center mb-12">
-                <h1 class="text-4xl md:text-5xl font-bold mb-2">Travel Packages</h1>
-                <p class="text-lg text-[#546A50] mb-4">Choose the perfect adventure for your next escape</p>
+        <section class="max-w-7xl mx-auto px-4 md:px-8 py-8 md:py-16">
+            <div class="text-center mb-8 md:mb-12">
+                <h1 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-2">Travel Packages</h1>
+                <p class="text-base md:text-lg text-[#546A50] mb-4">Choose the perfect adventure for your next escape</p>
                 <div class="inline-flex bg-white rounded-full shadow p-1">
-                    <button class="px-6 py-2 rounded-full font-semibold text-[#2B3E34] bg-[#00ffff] shadow hover:opacity-90 transition">Monthly</button>
-                    <button class="px-6 py-2 rounded-full font-semibold text-[#2B3E34] hover:bg-[#00ffff] transition">Yearly</button>
+                    <button class="px-4 md:px-6 py-2 rounded-full font-semibold text-[#2B3E34] bg-[#00ffff] shadow hover:opacity-90 transition text-sm md:text-base">Monthly</button>
+                    <button class="px-4 md:px-6 py-2 rounded-full font-semibold text-[#2B3E34] hover:bg-[#00ffff] transition text-sm md:text-base">Yearly</button>
                 </div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-2xl shadow-xl border border-[#7E8A6D] p-8 flex flex-col">
-                    <h2 class="text-xl font-bold mb-2 text-[#2B3E34]">Budget Explorer</h2>
-                    <div class="text-4xl font-extrabold mb-1">₱1,000<span class="text-lg font-normal">/month</span></div>
-                    <p class="mb-4 text-[#546A50]">Perfect for solo travelers or backpackers</p>
-                    <a href="#" class="bg-[#00ffff] text-black font-semibold rounded-lg py-2 mb-6 shadow hover:opacity-90 transition text-center">Get Started Now</a>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                <div class="bg-white rounded-2xl shadow-xl border border-[#7E8A6D] p-6 md:p-8 flex flex-col">
+                    <h2 class="text-lg md:text-xl font-bold mb-2 text-[#2B3E34]">Budget Explorer</h2>
+                    <div class="text-2xl md:text-4xl font-extrabold mb-1">₱1,000<span class="text-base md:text-lg font-normal">/month</span></div>
+                    <p class="mb-4 text-[#546A50] text-sm md:text-base">Perfect for solo travelers or backpackers</p>
+                    <a href="#" class="bg-[#00ffff] text-black font-semibold rounded-lg py-2 mb-6 shadow hover:opacity-90 transition text-center text-sm md:text-base">Get Started Now</a>
                     <h3 class="font-semibold mb-2">Includes:</h3>
                     <ul class="space-y-2 text-sm text-[#2B3E34]">
                         <li>✔️ Hotel accommodation</li>
@@ -61,11 +94,11 @@
                         <li>✔️ Email support</li>
                     </ul>
                 </div>
-                <div class="bg-white rounded-2xl shadow-xl border-2 border-[#00ffff] p-8 flex flex-col scale-105">
-                    <h2 class="text-xl font-bold mb-2 text-[#2B3E34]">Adventure Seeker</h2>
-                    <div class="text-4xl font-extrabold mb-1">₱4,999<span class="text-lg font-normal">/month</span></div>
-                    <p class="mb-4 text-[#546A50]">Great for couples or friends looking for more</p>
-                    <a href="#" class="bg-[#00ffff] text-black font-semibold rounded-lg py-2 mb-6 shadow hover:opacity-90 transition text-center">Get Started Now</a>
+                <div class="bg-white rounded-2xl shadow-xl border-2 border-[#00ffff] p-6 md:p-8 flex flex-col md:scale-105">
+                    <h2 class="text-lg md:text-xl font-bold mb-2 text-[#2B3E34]">Adventure Seeker</h2>
+                    <div class="text-2xl md:text-4xl font-extrabold mb-1">₱4,999<span class="text-base md:text-lg font-normal">/month</span></div>
+                    <p class="mb-4 text-[#546A50] text-sm md:text-base">Great for couples or friends looking for more</p>
+                    <a href="#" class="bg-[#00ffff] text-black font-semibold rounded-lg py-2 mb-6 shadow hover:opacity-90 transition text-center text-sm md:text-base">Get Started Now</a>
                     <h3 class="font-semibold mb-2">Includes:</h3>
                     <ul class="space-y-2 text-sm text-[#2B3E34]">
                         <li>✔️ 3-star hotel stay</li>
@@ -75,11 +108,11 @@
                         <li>✔️ Priority chat support</li>
                     </ul>
                 </div>
-                <div class="bg-white rounded-2xl shadow-xl border border-[#7E8A6D] p-8 flex flex-col">
-                    <h2 class="text-xl font-bold mb-2 text-[#2B3E34]">Luxury Voyager</h2>
-                    <div class="text-4xl font-extrabold mb-1">₱14,999<span class="text-lg font-normal">/month</span></div>
-                    <p class="mb-4 text-[#546A50]">For families or groups seeking premium experiences</p>
-                    <a href="#" class="bg-[#00ffff] text-black font-semibold rounded-lg py-2 mb-6 shadow hover:opacity-90 transition text-center">Get Started Now</a>
+                <div class="bg-white rounded-2xl shadow-xl border border-[#7E8A6D] p-6 md:p-8 flex flex-col">
+                    <h2 class="text-lg md:text-xl font-bold mb-2 text-[#2B3E34]">Luxury Voyager</h2>
+                    <div class="text-2xl md:text-4xl font-extrabold mb-1">₱14,999<span class="text-base md:text-lg font-normal">/month</span></div>
+                    <p class="mb-4 text-[#546A50] text-sm md:text-base">For families or groups seeking premium experiences</p>
+                    <a href="#" class="bg-[#00ffff] text-black font-semibold rounded-lg py-2 mb-6 shadow hover:opacity-90 transition text-center text-sm md:text-base">Get Started Now</a>
                     <h3 class="font-semibold mb-2">Includes:</h3>
                     <ul class="space-y-2 text-sm text-[#2B3E34]">
                         <li>✔️ 5-star resort stay</li>
@@ -98,5 +131,30 @@
             <p class="text-sm">&copy; 2025 Jesson Escapes. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        // Mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!mobileMenuBtn.contains(event.target) && !mobileMenu.contains(event.target)) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+
+            // Close mobile menu when window is resized to desktop
+            window.addEventListener('resize', function() {
+                if (window.innerWidth >= 768) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
 </body>
 </html>

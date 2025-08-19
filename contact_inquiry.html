@@ -9,11 +9,13 @@
 </head>
 <body class="bg-[#f6f9f7] text-[#2B3E34] min-h-screen flex flex-col">
     <header class="bg-[#000000] opacity-90 text-white w-full p-4 border-b-2 border-[#00ffff] backdrop-blur-sm">
-        <nav class="flex max-w-7xl mx-auto">
-            <div class="font-bold text-xl my-auto">
+        <nav class="flex items-center justify-between max-w-7xl mx-auto">
+            <div class="font-bold text-xl">
                 <a href="index.html" class="hover:text-[#00ffff] transition duration-300">JESSON ESCAPES</a>
             </div>
-            <div class="ml-auto my-auto">
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex">
                 <ul class="flex space-x-4">
                     <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)] transform hover:scale-105">
                         <a href="index.html">Home</a>
@@ -35,15 +37,46 @@
                     </li>
                 </ul>
             </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-white hover:text-[#00ffff] transition duration-300" id="mobile-menu-btn">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
         </nav>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="md:hidden mt-4 hidden" id="mobile-menu">
+            <ul class="flex flex-col space-y-2 px-4">
+                <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)]">
+                    <a href="index.html" class="block">Home</a>
+                </li>
+                <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)]">
+                    <a href="header_login.html" class="block">Login</a>
+                </li>
+                <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)]">
+                    <a href="content.html" class="block">Content</a>
+                </li>
+                <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)]">
+                    <a href="price_Block.html" class="block">Prices</a>
+                </li>
+                <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)]">
+                    <a href="download.html" class="block">Download Now</a>
+                </li>
+                <li class="rounded bg-[#000000] text-white font-bold border-b-2 border-[#00ffff] hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)] transition duration-500 p-2">
+                    <a href="contact_inquiry.html" class="block">Contact Us</a>
+                </li>
+            </ul>
+        </div>
     </header>
 
     <main class="flex-grow">
-        <section class="max-w-7xl mx-auto px-8 py-20 flex flex-col md:flex-row gap-12">
+        <section class="max-w-7xl mx-auto px-4 md:px-8 py-12 md:py-20 flex flex-col lg:flex-row gap-8 md:gap-12">
             <!-- Contact Info -->
-            <div class="md:w-1/2 flex flex-col justify-center">
-                <h1 class="text-4xl font-bold mb-4">Contact Us</h1>
-                <p class="mb-6 text-[#546A50]">We'd love to help you plan your next adventure. Reach out to us via form or directly through the details below.</p>
+            <div class="lg:w-1/2 flex flex-col justify-center order-2 lg:order-1">
+                <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Contact Us</h1>
+                <p class="mb-6 text-[#546A50] text-sm md:text-base">We'd love to help you plan your next adventure. Reach out to us via form or directly through the details below.</p>
                 <div class="space-y-4 mb-8">
                     <div>
                         <span class="font-semibold"><i class="fas fa-envelope text-[#00ffff] mr-2"></i>Email:</span>
@@ -68,37 +101,37 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div class="bg-white rounded-xl shadow p-4 border border-[#7E8A6D] text-center">
-                        <div class="text-[#00ffff] text-2xl mb-2"><i class="fas fa-headset"></i></div>
-                        <div class="font-semibold">Customer Support</div>
-                        <div class="text-sm text-[#546A50]">24/7 assistance for all your travel needs.</div>
+                    <div class="bg-white rounded-xl shadow p-3 md:p-4 border border-[#7E8A6D] text-center">
+                        <div class="text-[#00ffff] text-xl md:text-2xl mb-2"><i class="fas fa-headset"></i></div>
+                        <div class="font-semibold text-sm md:text-base">Customer Support</div>
+                        <div class="text-xs md:text-sm text-[#546A50]">24/7 assistance for all your travel needs.</div>
                     </div>
-                    <div class="bg-white rounded-xl shadow p-4 border border-[#7E8A6D] text-center">
-                        <div class="text-[#00ffff] text-2xl mb-2"><i class="fas fa-lightbulb"></i></div>
-                        <div class="font-semibold">Feedback & Suggestions</div>
-                        <div class="text-sm text-[#546A50]">Help us improve by sharing your ideas.</div>
+                    <div class="bg-white rounded-xl shadow p-3 md:p-4 border border-[#7E8A6D] text-center">
+                        <div class="text-[#00ffff] text-xl md:text-2xl mb-2"><i class="fas fa-lightbulb"></i></div>
+                        <div class="font-semibold text-sm md:text-base">Feedback & Suggestions</div>
+                        <div class="text-xs md:text-sm text-[#546A50]">Help us improve by sharing your ideas.</div>
                     </div>
-                    <div class="bg-white rounded-xl shadow p-4 border border-[#7E8A6D] text-center">
-                        <div class="text-[#00ffff] text-2xl mb-2"><i class="fas fa-newspaper"></i></div>
-                        <div class="font-semibold">Media Inquiries</div>
-                        <div class="text-sm text-[#546A50]">For press and partnership requests.</div>
+                    <div class="bg-white rounded-xl shadow p-3 md:p-4 border border-[#7E8A6D] text-center">
+                        <div class="text-[#00ffff] text-xl md:text-2xl mb-2"><i class="fas fa-newspaper"></i></div>
+                        <div class="font-semibold text-sm md:text-base">Media Inquiries</div>
+                        <div class="text-xs md:text-sm text-[#546A50]">For press and partnership requests.</div>
                     </div>
                 </div>
             </div>
             <!-- Contact Form -->
-            <div class="md:w-1/2 flex flex-col justify-center">
-                <div class="bg-white rounded-2xl shadow-xl p-8 border border-[#7E8A6D]">
-                    <h2 class="text-2xl font-semibold mb-2 text-center">Get in Touch</h2>
-                    <p class="text-[#546A50] mb-6 text-center">You can reach us anytime</p>
-                    <form class="space-y-5">
-                        <div class="flex gap-3">
-                            <input type="text" placeholder="First name" class="w-1/2 border border-[#7E8A6D] p-3 rounded focus:outline-none focus:ring-2 focus:ring-[#00ffff]" required>
-                            <input type="text" placeholder="Last name" class="w-1/2 border border-[#7E8A6D] p-3 rounded focus:outline-none focus:ring-2 focus:ring-[#00ffff]" required>
+            <div class="lg:w-1/2 flex flex-col justify-center order-1 lg:order-2">
+                <div class="bg-white rounded-2xl shadow-xl p-6 md:p-8 border border-[#7E8A6D]">
+                    <h2 class="text-xl md:text-2xl font-semibold mb-2 text-center">Get in Touch</h2>
+                    <p class="text-[#546A50] mb-6 text-center text-sm md:text-base">You can reach us anytime</p>
+                    <form class="space-y-4 md:space-y-5">
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <input type="text" placeholder="First name" class="w-full sm:w-1/2 border border-[#7E8A6D] p-2 md:p-3 rounded focus:outline-none focus:ring-2 focus:ring-[#00ffff] text-sm md:text-base" required>
+                            <input type="text" placeholder="Last name" class="w-full sm:w-1/2 border border-[#7E8A6D] p-2 md:p-3 rounded focus:outline-none focus:ring-2 focus:ring-[#00ffff] text-sm md:text-base" required>
                         </div>
-                        <input type="email" placeholder="Your email" class="w-full border border-[#7E8A6D] p-3 rounded focus:outline-none focus:ring-2 focus:ring-[#00ffff]" required>
-                        <input type="tel" placeholder="Phone number" class="w-full border border-[#7E8A6D] p-3 rounded focus:outline-none focus:ring-2 focus:ring-[#00ffff]" required>
-                        <textarea placeholder="How can we help?" rows="4" maxlength="120" class="w-full border border-[#7E8A6D] p-3 rounded focus:outline-none focus:ring-2 focus:ring-[#00ffff]" required></textarea>
-                        <button type="submit" class="w-full bg-[#00ffff] text-black px-6 py-3 rounded font-semibold hover:opacity-90 shadow transition">Submit</button>
+                        <input type="email" placeholder="Your email" class="w-full border border-[#7E8A6D] p-2 md:p-3 rounded focus:outline-none focus:ring-2 focus:ring-[#00ffff] text-sm md:text-base" required>
+                        <input type="tel" placeholder="Phone number" class="w-full border border-[#7E8A6D] p-2 md:p-3 rounded focus:outline-none focus:ring-2 focus:ring-[#00ffff] text-sm md:text-base" required>
+                        <textarea placeholder="How can we help?" rows="4" maxlength="120" class="w-full border border-[#7E8A6D] p-2 md:p-3 rounded focus:outline-none focus:ring-2 focus:ring-[#00ffff] text-sm md:text-base" required></textarea>
+                        <button type="submit" class="w-full bg-[#00ffff] text-black px-6 py-2 md:py-3 rounded font-semibold hover:opacity-90 shadow transition text-sm md:text-base">Submit</button>
                         <p class="text-xs text-center text-[#546A50] mt-2">By contacting us, you agree to our <a href="#" class="underline hover:text-[#00ffff]">Terms of Service</a> and <a href="#" class="underline hover:text-[#00ffff]">Privacy Policy</a>.</p>
                     </form>
                 </div>
@@ -110,5 +143,30 @@
             <p class="text-sm">&copy; 2025 Jesson Escapes. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        // Mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!mobileMenuBtn.contains(event.target) && !mobileMenu.contains(event.target)) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+
+            // Close mobile menu when window is resized to desktop
+            window.addEventListener('resize', function() {
+                if (window.innerWidth >= 768) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
 </body>
 </html>

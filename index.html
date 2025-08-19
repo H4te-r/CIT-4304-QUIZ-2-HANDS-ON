@@ -8,50 +8,83 @@
     </head>
     <body class="">
         <header class="bg-[#000000] opacity-90 text-white w-full p-4 border-b-2 border-[#00ffff] backdrop-blur-sm">
-            <nav class="flex max-w-7xl mx-auto">
-                <div class="font-bold text-xl my-auto">
+            <nav class="flex items-center justify-between max-w-7xl mx-auto">
+                <div class="font-bold text-xl">
                     <a href="index.html" class="hover:text-[#00ffff] transition duration-300">JESSON ESCAPES</a>
                 </div>
-                <div class="ml-auto my-auto">
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex">
                     <ul class="flex space-x-4">
                         <li class="rounded bg-[#000000] text-white font-bold border-b-2 border-[#00ffff] hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)] transition duration-500 p-2 transform hover:scale-105">
                             <a href="index.html">Home</a>
                         </li>
-                        <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)] transition duration-500 p-2 transform hover:scale-105">
+                        <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)] transform hover:scale-105">
                             <a href="header_login.html">Login</a>
                         </li>
-                        <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)] transition duration-500 p-2 transform hover:scale-105">
+                        <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)] transform hover:scale-105">
                             <a href="content.html">Content</a>
                         </li>
-                        <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)] transition duration-500 p-2 transform hover:scale-105">
+                        <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)] transform hover:scale-105">
                             <a href="price_Block.html">Prices</a>
                         </li>
-                        <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)] transition duration-500 p-2 transform hover:scale-105">
+                        <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)] transform hover:scale-105">
                             <a href="download.html">Download Now</a>
                         </li>
-                        <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)] transition duration-500 p-2 transform hover:scale-105">
+                        <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)] transform hover:scale-105">
                             <a href="contact_inquiry.html">Contact Us</a>
                         </li>
                     </ul>
                 </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-white hover:text-[#00ffff] transition duration-300" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
             </nav>
+
+            <!-- Mobile Navigation Menu -->
+            <div class="md:hidden mt-4 hidden" id="mobile-menu">
+                <ul class="flex flex-col space-y-2 px-4">
+                    <li class="rounded bg-[#000000] text-white font-bold border-b-2 border-[#00ffff] hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)] transition duration-500 p-2">
+                        <a href="index.html" class="block">Home</a>
+                    </li>
+                    <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)]">
+                        <a href="header_login.html" class="block">Login</a>
+                    </li>
+                    <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)]">
+                        <a href="content.html" class="block">Content</a>
+                    </li>
+                    <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)]">
+                        <a href="price_Block.html" class="block">Prices</a>
+                    </li>
+                    <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)]">
+                        <a href="download.html" class="block">Download Now</a>
+                    </li>
+                    <li class="rounded hover:text-[#00ffff] transition duration-500 p-2 hover:drop-shadow-[0_6px_25px_rgba(0,255,255,0.8)]">
+                        <a href="contact_inquiry.html" class="block">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
         </header>
-        <section class="relative w-full h-screen bg-cover bg-center flex items-center justify-center bg-fixed" style="background-image: url('https://images.pexels.com/photos/7510375/pexels-photo-7510375.jpeg');">
-            <div class="bg-black bg-opacity-60 text-white p-24 rounded-xl text-center m-4 backdrop-blur-sm border border-[#00ffff]/20 shadow-2xl">
-                <h1 class="text-5xl font-bold mb-6 text-[#00ffff]">Jesson Escapes</h1>
-                <p class="pb-6 text-lg leading-relaxed max-w-2xl mx-auto">Welcome to Jesson Escapes, your gateway to stress-free and unforgettable adventures. Whether you're craving a beach getaway, a city break, or a nature escape, we make travel simple, smooth, and full of memories. Let Jesson Escapes take you where you want to be.</p>
+        <section class="relative w-full min-h-screen bg-cover bg-center flex items-center justify-center bg-fixed" style="background-image: url('https://images.pexels.com/photos/7510375/pexels-photo-7510375.jpeg');">
+            <div class="bg-black bg-opacity-60 text-white p-6 md:p-16 lg:p-24 rounded-xl text-center m-4 backdrop-blur-sm border border-[#00ffff]/20 shadow-2xl max-w-4xl mx-auto">
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 text-[#00ffff]">Jesson Escapes</h1>
+                <p class="pb-4 md:pb-6 text-base md:text-lg leading-relaxed max-w-2xl mx-auto">Welcome to Jesson Escapes, your gateway to stress-free and unforgettable adventures. Whether you're craving a beach getaway, a city break, or a nature escape, we make travel simple, smooth, and full of memories. Let Jesson Escapes take you where you want to be.</p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="header_login.html" class="bg-[#00ffff] text-black hover:bg-[#00cccc] px-8 py-3 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg inline-block text-center">Start Booking Now</a>
-                    <a href="download.html" class="bg-transparent border-2 border-[#00ffff] text-[#00ffff] hover:bg-[#00ffff] hover:text-black px-8 py-3 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg inline-block text-center">Download Our App</a>
+                    <a href="header_login.html" class="bg-[#00ffff] text-black hover:bg-[#00cccc] px-6 md:px-8 py-3 rounded-lg font-semibold text-base md:text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg inline-block text-center">Start Booking Now</a>
+                    <a href="download.html" class="bg-transparent border-2 border-[#00ffff] text-[#00ffff] hover:bg-[#00ffff] hover:text-black px-6 md:px-8 py-3 rounded-lg font-semibold text-base md:text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg inline-block text-center">Download Our App</a>
                 </div>
             </div>
         </section>
 
-        <section class="py-20 bg-white">
+        <section class="py-12 md:py-20 bg-white">
             <div class="max-w-7xl mx-auto px-4">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl font-bold text-gray-900">Why Choose Jesson Escapes?</h2>
-                    <p class="text-lg text-gray-600">Experience travel booking like never before</p>
+                <div class="text-center mb-12 md:mb-16">
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900">Why Choose Jesson Escapes?</h2>
+                    <p class="text-base md:text-lg text-gray-600">Experience travel booking like never before</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -72,11 +105,11 @@
             </div>
         </section>
 
-        <section class="py-20 bg-gray-50">
+        <section class="py-12 md:py-20 bg-gray-50">
             <div class="max-w-7xl mx-auto px-4">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl font-bold text-gray-900">Popular Destinations</h2>
-                    <p class="text-lg text-gray-600">Discover the world's most amazing places</p>
+                <div class="text-center mb-12 md:mb-16">
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900">Popular Destinations</h2>
+                    <p class="text-base md:text-lg text-gray-600">Discover the world's most amazing places</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
@@ -123,11 +156,11 @@
             </div>
         </section>
 
-        <section class="py-20 bg-gradient-to-b from-white to-gray-50">
+        <section class="py-12 md:py-20 bg-gradient-to-b from-white to-gray-50">
             <div class="max-w-7xl mx-auto px-4">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl font-bold text-gray-900 mb-4">What Our Travelers Say</h2>
-                    <p class="text-lg text-gray-600">Real experiences from real travelers</p>
+                <div class="text-center mb-12 md:mb-16">
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">What Our Travelers Say</h2>
+                    <p class="text-base md:text-lg text-gray-600">Real experiences from real travelers</p>
                 </div>
                 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -180,5 +213,31 @@
                 </div>
             </div>
         </footer>
+
+        <script>
+            // Mobile menu toggle functionality
+            document.addEventListener('DOMContentLoaded', function() {
+                const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+                const mobileMenu = document.getElementById('mobile-menu');
+                
+                mobileMenuBtn.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+
+                // Close mobile menu when clicking outside
+                document.addEventListener('click', function(event) {
+                    if (!mobileMenuBtn.contains(event.target) && !mobileMenu.contains(event.target)) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                });
+
+                // Close mobile menu when window is resized to desktop
+                window.addEventListener('resize', function() {
+                    if (window.innerWidth >= 768) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                });
+            });
+        </script>
     </body>
 </html>
